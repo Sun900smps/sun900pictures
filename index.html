@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ==================================
+         SEO & Social Media Meta Tags
+         ================================== -->
+    <title>Thomas White (SUN900) - Official Site | Music Producer & Engineer</title>
+    <meta name="description" content="The official website for Thomas White (SUN900), a music producer, software engineer, and songwriter from Richmond, VA. Explore his music, biography, and affiliation with The International Teemsterrs Union.">
+    <meta name="keywords" content="Thomas White, SUN900, SMPS, music producer, software engineer, songwriter, Richmond, VA, music licensing, collaboration, Kappa Alpha Psi, Virginia Union University, Leidos, ASCAP, Distrokid, Teemsterrs Union, Hip Hop Producer">
+    <link rel="canonical" href="https://yoursite.com/" /> <!-- Replace with your actual domain -->
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:title" content="Thomas White (SUN900) - Official Site">
+    <meta property="og:description" content="Explore the official hub for music producer Thomas White (SUN900), his work with SMPS, and The Teemsterrs Union.">
+    <meta property="og:image" content="https://github.com/Sun900smps/sun900pictures/blob/main/ThomasSun900White.jpg?raw=true">
+    <meta property="og:url" content="https://yoursite.com/"> <!-- Replace with your actual domain -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Thomas White (SUN900) Official Site">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@sun900_smps">
+    <meta name="twitter:creator" content="@sun900_smps">
+    <meta name="twitter:title" content="Thomas White (SUN900) - Producer, Engineer, Songwriter">
+    <meta name="twitter:description" content="The official site for Thomas White (SUN900). Discover his music, biography, and professional services.">
+    <meta name="twitter:image" content="https://github.com/Sun900smps/sun900pictures/blob/main/ThomasSun900White.jpg?raw=true">
+
+    <!-- Structured Data (JSON-LD) for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Thomas White",
+      "alternateName": "SUN900",
+      "url": "https://yoursite.com/", // Replace with your actual domain
+      "image": "https://github.com/Sun900smps/sun900pictures/blob/main/ThomasSun900White.jpg?raw=true",
+      "description": "Thomas White, known as SUN900, is an American music producer, software engineer, and songwriter from Richmond, VA, affiliated with SMPS and The International Teemsterrs Union.",
+      "jobTitle": ["Music Producer", "Software Engineer", "Songwriter"],
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Virginia Union University" },
+        { "@type": "CollegeOrUniversity", "name": "North Carolina A&T State University" }
+      ],
+      "memberOf": { "@type": "Organization", "name": "Kappa Alpha Psi Fraternity, Inc." },
+      "sameAs": [
+        "https://www.youtube.com/@SUN900_SMPS",
+        "https://sun900smps.bandcamp.com/",
+        "https://www.instagram.com/sun900_smps",
+        "https://www.tiktok.com/@sun900_smps",
+        "https://on.soundcloud.com/6KGvid3qYvPJaao4A",
+        "https://www.facebook.com/SUN900_SMPS"
+      ]
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts for Wikipedia Look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Linux+Libertine:wght@400;700&family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Gumroad Embed Script -->
+    <script src="https://gumroad.com/js/gumroad-embed.js"></script>
+    
+    <style>
+        /* Custom Wikipedia Styles from Template */
+        body { background-color: #f6f6f6; color: #202122; font-family: 'Linux Libertine', 'Lora', serif; }
+        #main-content { background-color: #ffffff; border-left: 1px solid #a2a9b1; border-right: 1px solid #a2a9b1; border-bottom: 1px solid #a2a9b1; }
+        h1, h2, h3, h4, h5, h6, .sans-serif { font-family: 'Arimo', sans-serif; }
+        #main-content h1.page-title { font-family: 'Linux Libertine', 'Lora', serif; font-size: 1.8em; border-bottom: 1px solid #a2a9b1; padding-bottom: 0.25em; margin-bottom: 0.1em; font-weight: 400; }
+        #main-content h2.section-title { font-family: 'Linux Libertine', 'Lora', serif; font-size: 1.5em; border-bottom: 1px solid #a2a9b1; padding-bottom: 0.25em; margin-top: 1em; margin-bottom: 0.5em; font-weight: 400; }
+        .link-blue { color: #0645ad; }
+        a.link-blue:hover { text-decoration: underline; }
+        .infobox { background-color: #f8f9fa; border: 1px solid #a2a9b1; font-size: 0.88em; line-height: 1.5; }
+        .infobox th { text-align: left; padding: 0.5em; font-weight: bold; }
+        .infobox td { padding: 0.5em; }
+        .toc { background-color: #f8f9fa; border: 1px solid #a2a9b1; padding: 1em; display: table; margin-bottom: 1em; }
+        .toc ul { list-style-type: none; padding-left: 0; }
+        .toc > ul > li { margin-bottom: 0.4em; }
+        .toc .toclevel-1 { font-weight: bold; }
+        #main-content p { margin-bottom: 1.5em; }
+        .image-caption { font-size: 0.8rem; text-align: center; color: #54595d; padding: 0.25rem; }
+        #left-sidebar a.active { font-weight: bold; color: #000; }
+        
+        /* Mobile Menu Styles */
+        #mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        #mobile-menu.is-open {
+            transform: translateX(0);
+        }
+        .main-section {
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 pb-16 md:pb-0">
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 bg-[#f8f9fa] border-r border-gray-300 p-4 text-sm z-50 md:hidden overflow-y-auto">
+        <button id="close-menu-button" class="absolute top-4 right-4 text-2xl">&times;</button>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="Site Logo" class="w-24 mx-auto mb-4 mt-8">
+        <h2 class="font-bold text-center mb-2 sans-serif">Thomas White</h2>
+        <nav id="mobile-nav">
+            <!-- Mobile nav links will be cloned here by JS -->
+        </nav>
+    </div>
+
+    <div class="flex flex-col md:flex-row max-w-screen-2xl mx-auto bg-white shadow-lg">
+        <!-- Left Sidebar (Desktop) -->
+        <aside id="left-sidebar" class="hidden md:block w-full md:w-48 bg-[#f8f9fa] border-r border-gray-300 p-4 text-sm">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="Site Logo" class="w-24 mx-auto mb-4">
+            <h2 class="font-bold text-center mb-2 sans-serif">Thomas White</h2>
+            <nav id="desktop-nav">
+                <ul>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="landing">Home</a></li>
+                    <hr class="my-2">
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="biography">Biography</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="music">Music</a></li>
+                     <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="blog">Blog</a></li>
+                    <hr class="my-2">
+                    <h3 class="font-bold mb-2 sans-serif">The Teemsterrs Union</h3>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="union">About the Union</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="join-movement">Join the Movement</a></li>
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="roadmap">Local #1 Roadmap</a></li>
+                    <hr class="my-2">
+                    <li class="mb-1"><a href="#" class="link-blue hover:underline" data-page="links">External Links</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <div class="flex-1 flex flex-col min-w-0">
+            <!-- Top Bar -->
+            <header class="flex justify-between items-center p-4 border-b border-gray-300 bg-[#f8f9fa] sans-serif text-sm">
+                <div class="flex items-center">
+                    <button id="mobile-menu-button-header" class="md:hidden mr-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                    <div>
+                        <a href="#" class="link-blue hover:underline">Article</a>
+                        <a href="#" class="ml-4 text-gray-500">Talk</a>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <input type="search" placeholder="Search Site" class="border border-gray-400 rounded-l px-2 py-1 text-sm w-24 md:w-auto">
+                    <button class="bg-gray-200 border border-gray-400 border-l-0 rounded-r px-3 py-1 text-sm">Search</button>
+                </div>
+            </header>
+
+            <!-- Page Content -->
+            <main id="main-content" class="p-4 md:p-8 flex-1 overflow-y-auto">
+                <!-- JavaScript will populate this area -->
+            </main>
+
+            <!-- Footer -->
+            <footer class="p-4 border-t border-gray-300 text-xs text-gray-600 bg-[#f8f9fa]">
+                <p>This page was last edited on 25 August 2025, at 22:30 (EDT).</p>
+                <p>Text is available under the <a href="#" class="link-blue hover:underline">Creative Commons Attribution-ShareAlike License 4.0</a>; additional terms may apply.</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Floating Mobile Menu Button -->
+    <button id="mobile-menu-button-float" class="md:hidden fixed bottom-4 right-4 bg-white border border-gray-400 rounded-full p-3 shadow-lg z-40">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+    </button>
+    
+    <script>
+        // --- CONTENT FOR EACH PAGE ---
+        const pageContent = {
+            landing: {
+                title: "SUN900",
+                html: `
+                    <div class="main-section bg-blue-50">
+                        <h2 class="section-title">SUN900 Music</h2>
+                        <p><b>Thomas White</b>, professionally known as <b>SUN900</b>, is an American music producer, software engineer, and songwriter based in Richmond, Virginia. He is recognized within the regional music scene for his collaborative production style and is building a global presence through music licensing and artist development. White combines his technical background with his musical pursuits, offering a range of professional music services for artists.</p>
+                    </div>
+
+                    <div class="main-section bg-green-50">
+                        <h2 class="section-title">The Teemsterrs Union</h2>
+                         <p>As an affiliate of The International Teemsterrs Union, SUN900's philosophy centers on close collaboration with emerging artists. His work focuses on developing new talent with a strategic emphasis on music licensing and professional songwriting, in line with the Union's mission to empower independent creatives. He is a registered publisher with ASCAP under SMPS PRODUCTIONS.</p>
+                         <a href="#" data-page="union" class="link-blue font-bold mt-auto pt-2 inline-block">Learn About the Union &rarr;</a>
+                    </div>
+
+                    <div class="main-section bg-yellow-50">
+                        <h2 class="section-title">Get Started</h2>
+                        <p>Explore the music and career of SUN900 through the resources on the left. Listen to his latest projects on the <a href="#" data-page="music" class="link-blue">Music page</a>, read his full <a href="#" data-page="biography" class="link-blue">Biography</a>, and connect via the <a href="#" data-page="links" class="link-blue">External Links</a> page.</p>
+                    </div>
+
+                    <h2 class="section-title">Latest Video</h2>
+                    <div class="my-4">
+                        <div class="aspect-w-16 aspect-h-9">
+                           <iframe class="w-full h-auto rounded" style="aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/videoseries?si=n5Xbb2ZNUT-pNt2e&list=OLAK5uy_lx3SGidpzqiKR3RhncDNgTZ0XA7Sf5Rww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <h2 class="section-title">Visions EP</h2>
+                    <div class="my-4 text-center">
+                         <iframe style="border: 0; width: 100%; max-width: 400px; height: 120px; display: inline-block;" src="https://bandcamp.com/EmbeddedPlayer/album=211955073/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://sun900smps.bandcamp.com/album/visions">Visions by SUN900</a></iframe>
+                    </div>
+                `
+            },
+            biography: {
+                title: "Thomas White",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <div class="flex flex-col md:flex-row-reverse gap-8">
+                        <div class="w-full md:w-1/3">
+                            <table class="infobox w-full sans-serif">
+                                <tbody>
+                                    <tr><th colspan="2" class="text-center text-lg font-bold bg-gray-200 p-2">Thomas White</th></tr>
+                                    <tr><td colspan="2" class="text-center p-2"><img src="https://github.com/Sun900smps/sun900pictures/blob/main/ThomasSun900White.jpg?raw=true" alt="Thomas White professional headshot" class="mx-auto" onerror="this.onerror=null;this.src='https://placehold.co/300x300/cccccc/ffffff?text=Image+Not+Found';"><div class="text-xs p-1">Thomas White, 2025</div></td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Born</th><td id="born-cell-bio" class="p-2">Thomas White<br>1988<br>Nyack, New York, U.S.</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Education</th><td class="p-2">Virginia Union University (BS)<br>North Carolina A&T State University</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Nationality</th><td class="p-2">American</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Other names</th><td class="p-2">SUN900</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Occupation</th><td class="p-2">Music Producer, Software Engineer, Songwriter, Merchandise Manager</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Years active</th><td class="p-2">2006–Present (Music)</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Website</th><td class="p-2"><a href="https://sun900smps.bandcamp.com/" class="link-blue" target="_blank" rel="noopener noreferrer">sun900smps.bandcamp.com</a></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="w-full md:w-2/3">
+                            <p><b>Thomas White</b>, professionally known as <b>SUN900</b>, is an American music producer, software engineer, and songwriter based in Richmond, Virginia. He is recognized within the regional music scene for his collaborative production style and is building a global presence through music licensing and artist development. White combines his technical background with his musical pursuits, offering a range of professional music services for artists.</p>
+                            
+                            <div id="toc" class="toc my-4 sans-serif mt-6">
+                                <h2 class="text-lg font-bold text-center border-b-0 m-0 p-0 mb-2">Contents</h2>
+                                <ul>
+                                    <li class="toclevel-1"><a href="#early-life"><span>1</span> Early Life and Education</a></li>
+                                    <li class="toclevel-1"><a href="#career"><span>2</span> Career in Music and Technology</a></li>
+                                    <li class="toclevel-1"><a href="#mentorship"><span>3</span> Mentorship and Artistic Growth</a></li>
+                                </ul>
+                            </div>
+
+                            <h2 id="early-life" class="section-title">Early Life and Education</h2>
+                            <p>Born in Nyack, New York, White's interest in music production began in 2006 while he was attending North Carolina Agricultural and Technical State University. A colleague introduced him to the digital audio workstation FruityLoops (now FL Studio), which served as the catalyst for his career in music. He later attended <a href="https://www.vuu.edu/" class="link-blue" target="_blank" rel="noopener noreferrer">Virginia Union University</a> from August 2014 to December 2016, earning a Bachelor of Science in Computer Information Systems. On March 25, 2016, he was initiated into the Alpha Gamma Chapter of <a href="https://kappaalphapsi1911.com/" class="link-blue" target="_blank" rel="noopener noreferrer">Kappa Alpha Psi Fraternity, Inc.</a></p>
+                            
+                            <h2 id="career" class="section-title">Career in Music and Technology</h2>
+                            <p>Two months after graduating from Virginia Union University, White began his career in the tech industry in 2017 at Leidos. He was hired as a software developer, a role he held for over seven years, later adding positions as a software tester and software engineer during his tenure with the company. This technical experience complements his meticulous approach to music production.</p>
+                                                        
+                            <h2 id="mentorship" class="section-title">Mentorship and Artistic Growth</h2>
+                            <p>A pivotal moment in White's artistic development occurred approximately five years ago when he met Charles Paris, also known as OTG, on the social audio application Clubhouse. This relationship evolved into a significant mentorship. Over the last two years, Paris provided White with an opportunity to study Hip Hop and music theory in depth, introducing him to production tools such as Ableton, Reason, and the Akai Professional MPC Live II, which has become his primary instrument for creation. White credits this tutelage with significantly amplifying his abilities as a producer.</p>
+                        </div>
+                    </div>
+                `
+            },
+            music: {
+                title: "Music of SUN900",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <p>White has recently released two instrumental beat tapes through the digital distributor DistroKid, showcasing his evolving sound and production skills. These projects are part of his broader strategy to build a catalog for licensing and collaboration.</p>
+                    
+                    <h2 class="section-title">Beat Tape Selections</h2>
+                    <div class="my-4 clear-both">
+                        <div class="aspect-w-16 aspect-h-9">
+                           <iframe class="w-full h-auto rounded" style="aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/videoseries?si=tM8MTYwunbTt1lQl&list=OLAK5uy_mS7iZc7kvcmvrH4QVJ43KjwlIqvAjskqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <h2 class="section-title">Latest Bandcamp Album</h2>
+                    <div class="my-4">
+                        <iframe style="border: 0; width: 100%; height: 340px;" src="https://bandcamp.com/EmbeddedPlayer/album=1911422789/size=large/bgcol=ffffff/linkcol=0687f5/artwork=big/transparent=true/" seamless><a href="https://sun900smps.bandcamp.com/album/beat-tape-2">Beat Tape 2 by SUN900</a></iframe>
+                    </div>
+
+                    <h2 class="section-title">Visions EP</h2>
+                    <div class="my-4 text-center">
+                         <iframe style="border: 0; width: 100%; max-width: 400px; height: 120px; display: inline-block;" src="https://bandcamp.com/EmbeddedPlayer/album=211955073/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://sun900smps.bandcamp.com/album/visions">Visions by SUN900</a></iframe>
+                    </div>
+                `
+            },
+            blog: {
+                title: "SUN900 Music Blog",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <p>The official blog for SUN900 Music, featuring updates, articles, and insights on music production and the creative process.</p>
+                    <div id="blog-feed" class="space-y-8 mt-6">
+                        <p>Loading latest blog posts...</p>
+                    </div>
+                `
+            },
+            links: {
+                title: "External Links",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <ul class="list-disc pl-5 sans-serif space-y-2">
+                        <li><a href="https://www.youtube.com/@SUN900_SMPS" class="link-blue" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                        <li><a href="https://sun900smps.bandcamp.com/" class="link-blue" target="_blank" rel="noopener noreferrer">Bandcamp</a></li>
+                        <li><a href="https://www.instagram.com/sun900_smps" class="link-blue" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@sun900_smps" class="link-blue" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+                        <li><a href="https://on.soundcloud.com/6KGvid3qYvPJaao4A" class="link-blue" target="_blank" rel="noopener noreferrer">SoundCloud</a></li>
+                        <li><a href="https://www.facebook.com/SUN900_SMPS" class="link-blue" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    </ul>
+                `
+            },
+            union: {
+                title: "The International Teemsterrs Union",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <div class="flex flex-col md:flex-row-reverse gap-8">
+                        <div class="w-full md:w-1/3">
+                            <table class="infobox w-full sans-serif">
+                                <tbody>
+                                    <tr><th colspan="2" class="text-center text-lg font-bold bg-gray-200 p-2">The International Teemsterrs Union</th></tr>
+                                    <tr><td colspan="2" class="text-center p-2"><img src="https://raw.githubusercontent.com/365otg/teemsterrspics/main/teemstersUSA.jpg" alt="The International Teemsterrs Union Logo" class="mx-auto"><div class="text-xs p-1">Official Emblem</div></td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Founded</th><td class="p-2">August 20, 2025</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Founder</th><td class="p-2">Charles A. Paris</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Focus</th><td class="p-2">Empowering independent workers, freelancers, and creatives</td></tr>
+                                    <tr class="border-t border-gray-300"><th scope="row" class="p-2">Motto</th><td class="p-2">"Supply The Work"</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="w-full md:w-2/3">
+                            <p><b>The International Teemsterrs Union</b> is a modern guild and advocacy group founded by Charles A. Paris for the new-age independent workforce. It is designed to serve the needs of 1099 workers, freelancers, gig economy participants, artists, producers, and other self-employed individuals who lack the traditional protections and collective bargaining power of legacy unions.</p>
+                            <h2 class="section-title">Mission and Vision</h2>
+                            <p>The core mission of the Teemsterrs Union is to provide its members with the resources, community, and leverage needed to thrive in the independent economy. This includes advocating for fair contracts, providing access to shared resources and benefits, fostering a strong community network, and offering educational tools to help members grow their businesses and careers.</p>
+                            <p>The vision is to create a powerful collective that can negotiate on behalf of its members, establish industry standards for freelance work, and build a sustainable ecosystem where independent workers are valued and protected. The union is built on the "Over Time Grind" philosophy, emphasizing resilience, skill, and collective action.</p>
+                        </div>
+                    </div>
+                `
+            },
+            'join-movement': {
+                title: "Join the Movement",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <p>Becoming a member of The International Teemsterrs Union means joining a community of like-minded independent workers dedicated to mutual support and collective empowerment. Membership provides access to exclusive resources, networking opportunities, and a voice in the movement to redefine the future of work.</p>
+                    <div class="bg-[#f8f9fa] border border-[#a2a9b1] p-6 rounded-md my-6 text-center">
+                        <h3 class="text-xl font-bold sans-serif mb-4">Become an Official Member</h3>
+                        <p class="mb-4">Your membership helps fund our advocacy efforts and build a stronger network for all independent workers. Join today to get your official membership card and access to our private community channels.</p>
+                        <div class="gumroad-product-embed"><a href="https://brotherotg.gumroad.com/l/teemsterrs">Loading...</a></div>
+                    </div>
+                `
+            },
+            roadmap: {
+                title: "Local #1 Roadmap",
+                html: `
+                    <p class="text-sm -mt-1 mb-4 text-gray-500">From Wikipedia, the free encyclopedia</p>
+                    <p>The following roadmap outlines the key objectives and milestones for the foundational chapter, Local #1, of The International Teemsterrs Union.</p>
+                    <h2 class="section-title">Phase 1: Foundation & Community Building (2025)</h2>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><b>Official Launch:</b> Establish the union's digital presence and foundational legal structure.</li>
+                        <li><b>Membership Drive:</b> Recruit the first 1,000 founding members to build a strong initial community.</li>
+                        <li><b>Community Platform:</b> Launch a private Discord or similar platform for member communication, collaboration, and support.</li>
+                        <li><b>Resource Hub:</b> Develop an online repository of contract templates, negotiation guides, and financial resources for freelancers.</li>
+                    </ul>
+                    <h2 class="section-title">Phase 2: Advocacy & Partnerships (2026)</h2>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><b>Establish Best Practices:</b> Publish a "Fair Freelancing" guide outlining standards for rates, contracts, and working conditions.</li>
+                        <li><b>Corporate Outreach:</b> Begin dialogue with major platforms in the gig economy to advocate for better terms for our members.</li>
+                        <li><b>Health & Insurance Partnerships:</b> Explore group options for health insurance, liability insurance, and other benefits for members.</li>
+                        <li><b>First Annual Summit:</b> Host a virtual or in-person summit for members featuring workshops, networking, and strategy sessions.</li>
+                    </ul>
+                     <h2 class="section-title">Phase 3: Expansion & Influence (2027 and Beyond)</h2>
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><b>Local Chapter Expansion:</b> Establish guidelines and support for creating new local chapters in different regions or industries.</li>
+                        <li><b>Political Advocacy:</b> Develop a lobbying arm to advocate for legislation that protects and benefits independent workers.</li>
+                        <li><b>Teemsterrs Job Board:</b> Create a curated job board featuring opportunities that meet the union's standards for fair compensation and terms.</li>
+                    </ul>
+                `
+            }
+        };
+
+        // --- NAVIGATION & PAGE LOGIC ---
+        document.addEventListener('DOMContentLoaded', function() {
+            const mainContent = document.getElementById('main-content');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuButtonHeader = document.getElementById('mobile-menu-button-header');
+            const mobileMenuButtonFloat = document.getElementById('mobile-menu-button-float');
+            const closeMenuButton = document.getElementById('close-menu-button');
+            const mobileNavContainer = document.getElementById('mobile-nav');
+            const desktopNavContainer = document.getElementById('desktop-nav');
+
+            // Clone desktop nav to mobile nav
+            if (desktopNavContainer && mobileNavContainer) {
+                mobileNavContainer.innerHTML = desktopNavContainer.innerHTML;
+            }
+
+            // --- Age Calculation ---
+            function calculateAge(cellId) {
+                const bornCell = document.getElementById(cellId);
+                if (bornCell) {
+                    const birthYear = 1988; 
+                    const birthMonth = 4; // May is month 4 (0-indexed)
+                    const birthDay = 15;
+                    const today = new Date();
+                    let age = today.getFullYear() - birthYear;
+                    const m = today.getMonth() - birthMonth;
+                    if (m < 0 || (m === 0 && today.getDate() < birthDay)) {
+                        age--;
+                    }
+                    const originalText = bornCell.innerHTML;
+                    bornCell.innerHTML = originalText.replace(/1988/, `1988 (age ${age})`);
+                }
+            }
+            
+            // --- Fetch Blog Feed ---
+            function fetchBlogFeed() {
+                const feedContainer = document.getElementById('blog-feed');
+                if (!feedContainer) return;
+
+                const rssUrl = 'https://sun900music.blogspot.com/feeds/posts/default?alt=rss';
+                // Using a CORS proxy to fetch the RSS feed
+                fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.status === 'ok' && data.items) {
+                            let feedHTML = '';
+                            data.items.forEach(item => {
+                                const tempDiv = document.createElement('div');
+                                tempDiv.innerHTML = item.content;
+                                const firstImg = tempDiv.querySelector('img');
+                                const imageUrl = firstImg ? firstImg.src : '';
+                                
+                                const plainText = tempDiv.textContent || "";
+                                const shortDesc = plainText.substring(0, 250) + '...';
+
+                                feedHTML += `
+                                    <div class="border-t border-gray-300 pt-4">
+                                        ${imageUrl ? `<img src="${imageUrl}" alt="${item.title}" class="w-full h-48 object-cover rounded-md mb-4">` : ''}
+                                        <h3 class="text-xl font-bold sans-serif"><a href="${item.link}" target="_blank" rel="noopener noreferrer" class="link-blue">${item.title}</a></h3>
+                                        <p class="text-xs text-gray-500 my-2">Published on: ${new Date(item.pubDate).toLocaleDateString()}</p>
+                                        <p class="text-sm text-gray-700">${shortDesc}</p>
+                                        <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="link-blue font-bold mt-2 inline-block">Read More &rarr;</a>
+                                    </div>
+                                `;
+                            });
+                            feedContainer.innerHTML = feedHTML;
+                        } else {
+                            feedContainer.innerHTML = '<p>Could not load blog feed.</p>';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error fetching blog feed:', error);
+                        feedContainer.innerHTML = '<p>Error loading blog feed.</p>';
+                    });
+            }
+
+
+            // --- Page Display Function ---
+            function showPage(pageId) {
+                const allNavLinks = document.querySelectorAll('nav a[data-page]');
+                allNavLinks.forEach(link => {
+                    link.classList.toggle('active', link.dataset.page === pageId);
+                });
+                
+                if (pageContent.hasOwnProperty(pageId)) {
+                    const content = pageContent[pageId];
+                    mainContent.innerHTML = `<h1 class="page-title">${content.title}</h1>${content.html}`;
+                } else {
+                    mainContent.innerHTML = `<h1 class="page-title">Page Not Found</h1><p>Sorry, the page you requested could not be found.</p>`;
+                    return;
+                }
+                
+                // Run page-specific logic
+                if (pageId === 'biography') {
+                    calculateAge('born-cell-bio');
+                }
+                if (pageId === 'blog') {
+                    fetchBlogFeed();
+                }
+                
+                // Scroll to top
+                mainContent.scrollTop = 0; 
+            }
+
+            // --- Mobile Menu Toggle ---
+            function toggleMenu() {
+                mobileMenu.classList.toggle('is-open');
+            }
+
+            mobileMenuButtonHeader.addEventListener('click', toggleMenu);
+            mobileMenuButtonFloat.addEventListener('click', toggleMenu);
+            closeMenuButton.addEventListener('click', toggleMenu);
+
+            // Use event delegation for nav links
+            document.body.addEventListener('click', function(e) {
+                const link = e.target.closest('a[data-page]');
+                if (link) {
+                    e.preventDefault();
+                    const pageId = link.dataset.page;
+                    showPage(pageId);
+                    if (mobileMenu.classList.contains('is-open')) {
+                        toggleMenu();
+                    }
+                }
+            });
+
+            // Show the landing page by default
+            showPage('landing');
+        });
+    </script>
+</body>
+</html>
